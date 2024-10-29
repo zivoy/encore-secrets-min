@@ -1,0 +1,5 @@
+services:
+  server:
+    image: minimum_secret:latest
+    environment:
+      - ANOTHER_SECRET=betterhiddensecret

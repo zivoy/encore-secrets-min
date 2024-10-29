@@ -1,0 +1,13 @@
+{
+  "$schema": "https://encore.dev/schemas/infra.schema.json",
+  "metadata": {
+    "app_id": "minimum_secret",
+    "env_name": "docker",
+    "env_type": "production",
+    "base_url": "http://localhost"
+  },
+  "secrets": {
+    "SomeSecret": "a hidden secret",
+    "AnotherSecret": {"$env": "ANOTHER_SECRET"}
+  },
+}
